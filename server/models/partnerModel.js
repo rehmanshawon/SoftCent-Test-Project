@@ -1,7 +1,4 @@
-//import User from "./userModel.js";
 const mongoose = require("mongoose");
-//const
-//const bcrypt = require("bcryptjs");
 
 const partnerSchema = new mongoose.Schema(
   {
@@ -19,7 +16,7 @@ const partnerSchema = new mongoose.Schema(
       required: true,
       default: 0,
     },
-    iamge: {
+    image: {
       type: String,
     },
   },
