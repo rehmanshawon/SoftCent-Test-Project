@@ -1,0 +1,36 @@
+{
+  "name": "softcent-test-project",
+  "version": "1.0.0",
+  "description": "An application where users can view all the offers and discounts of different brands and shops.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "client": "npm run start --prefix client",
+    "server": "nodemon server/index.js",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "build": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kopotron-Corporation/SoftCent-Test-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kopotron-Corporation/SoftCent-Test-Project/issues"
+  },
+  "homepage": "https://github.com/Kopotron-Corporation/SoftCent-Test-Project#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.6"
+  }
+}
